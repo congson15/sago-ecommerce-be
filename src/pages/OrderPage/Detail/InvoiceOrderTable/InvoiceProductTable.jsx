@@ -1,0 +1,11 @@
+import React from "react";
+import { Table } from "antd";
+
+
+export function InvoiceProductTable({ data, columns }) {
+    return (
+        <div>
+            <Table pagination={false} bordered={true} dataSource={data} columns={columns}/>
+        </div>
+    );
+}
